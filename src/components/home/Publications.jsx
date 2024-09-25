@@ -4,7 +4,7 @@ import { Jumbotron } from "./migration";
 
 const Publications = ({ heading, message, resume }) => {
     const publications = [
-      { title: "Research Paper 1", link: "#" },
+      { title: "Jaione Bengoetxea, Yi-Ling Chung, Marco Guerini, and Rodrigo Agerri. 2024. Basque and Spanish Counter Narrative Generation: Data Creation and Evaluation. In Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024), pages 2132–2141, Torino, Italia. ELRA and ICCL."},
       { title: "Article 2", link: "#" },
       { title: "Conference Paper 3", link: "#" },
     ];

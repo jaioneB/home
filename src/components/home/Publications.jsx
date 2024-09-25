@@ -2,7 +2,7 @@ import React from 'react';
 import { Jumbotron } from "./migration";
 
 
-const Publications = ({ heading, username, length, specfic }) => {
+const Publications = ({ heading, message, resume, specfic }) => {
   const publications = [
     { title: "Research Paper 1"},
     { title: "Article 2", link: "#" },

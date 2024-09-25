@@ -5,6 +5,7 @@ import {
   mainBody,
   about,
   repos,
+  repos2,
   leadership,
   skills,
   getInTouch,
@@ -53,6 +54,14 @@ const Home = React.forwardRef((props, ref) => {
           username={repos.gitHubUsername}
           length={repos.reposLength}
           specfic={repos.specificRepos}
+        />
+      )}
+      {repos2.show && (
+        <Project
+          heading={repos2.heading}
+          username={repos2.gitHubUsername}
+          length={repos2.reposLength}
+          specfic={repos2.specificRepos}
         />
       )}
       {leadership.show && (

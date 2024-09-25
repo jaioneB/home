@@ -151,4 +151,4 @@ const experiences = {
 
 
 
-export { navBar, mainBody, about, repos, blog, repos2, skills, leadership, getInTouch, experiences };
+export { navBar, mainBody, about, repos, repos2, skills, leadership, getInTouch, experiences };

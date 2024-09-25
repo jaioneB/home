@@ -2,7 +2,7 @@ import React from 'react';
 import { Jumbotron } from "./migration";
 
 
-const Publications = ({ heading, message, resume, specific }) => {
+const Publications = ({ heading, message, resume }) => {
     const publications = [
       { title: "Research Paper 1", link: "#" },
       { title: "Article 2", link: "#" },
@@ -16,9 +16,9 @@ const Publications = ({ heading, message, resume, specific }) => {
             <h2 className="display-4 mb-5 text-center">{heading}</h2>
             <p className="lead text-center">{message}</p>
             
-            <ul className="lead text-center">
+            <ul className="lead text-center list-unstyled d-flex flex-column align-items-center">
               {publications.map((pub, index) => (
-                <li key={index}>
+                <li key={index} className="text-center">
                   {pub.link ? (
                     <a href={pub.link} className="publication-link">
                       {pub.title}
@@ -48,6 +48,6 @@ const Publications = ({ heading, message, resume, specific }) => {
         </div>
       </Jumbotron>
     );
-  };
+};
   
-  export default Publications;
+export default Publications;

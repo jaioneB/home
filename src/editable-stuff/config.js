@@ -17,7 +17,7 @@ const mainBody = {
     },
     {
       image: "fa-linkedin",
-      url: "https://www.linkedin.com/in/hashirshoaeb/",
+      url: "https://www.linkedin.com/in/jaione-bengoetxea-azurmendi-5b931a1a3/",
     },
     {
       image: "fa-twitter",
@@ -62,6 +62,15 @@ const repos = {
   reposLength: 4,
   specificRepos: [],
 };
+
+const repos2 = {
+  show: true,
+  heading: "Recent Projects",
+  gitHubUsername: "hashirshoaeb", //i.e."johnDoe12Gh"
+  reposLength: 4,
+  specificRepos: [],
+};
+
 
 // Leadership SECTION
 const leadership = {
@@ -144,4 +153,4 @@ const experiences = {
 //   show: false,
 // };
 
-export { navBar, mainBody, about, repos, skills, leadership, getInTouch, experiences };
+export { navBar, mainBody, about, repos, repos2, skills, leadership, getInTouch, experiences };

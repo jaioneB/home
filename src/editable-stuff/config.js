@@ -16,14 +16,6 @@ const mainBody = {
       url: "https://github.com/jaioneB",
     },
     {
-      image: "fa-facebook",
-      url: "https://www.facebook.com/hashirshoaeb",
-    },
-    {
-      image: "fa-instagram",
-      url: "https://www.instagram.com/hashirshoaeb/",
-    },
-    {
       image: "fa-linkedin",
       url: "https://www.linkedin.com/in/hashirshoaeb/",
     },
@@ -51,7 +43,7 @@ const mainBody = {
 const about = {
   show: true,
   heading: "About Me",
-  imageLink: require("../editable-stuff/hashirshoaeb.png"),
+  imageLink: require("../editable-stuff/jaione-argazkia.jpg"),
   imageSize: 375,
   message:
     "Write presentation here",

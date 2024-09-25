@@ -1,7 +1,6 @@
 import React from 'react';
 import { Jumbotron } from "./migration";
 import Container from "react-bootstrap/Container";
-import { Jumbotron } from "./migration";
 import Row from "react-bootstrap/Row";
 import ProjectCard from "./ProjectCard";
 

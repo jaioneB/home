@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/home/static/css/main.fe927caf.css",
-    "main.js": "/home/static/js/main.24bdbdba.js",
+    "main.js": "/home/static/js/main.51d61b88.js",
     "static/js/787.4b24f717.chunk.js": "/home/static/js/787.4b24f717.chunk.js",
-    "static/media/jaione-argazkia.jpg": "/home/static/media/jaione-argazkia.b6285247c9f81bd6c354.jpg",
+    "static/media/jaione-argazkia.jpg": "/home/static/media/jaione-argazkia.25e9db7f4cc38ed32c5e.jpg",
     "index.html": "/home/index.html",
     "main.fe927caf.css.map": "/home/static/css/main.fe927caf.css.map",
-    "main.24bdbdba.js.map": "/home/static/js/main.24bdbdba.js.map",
+    "main.51d61b88.js.map": "/home/static/js/main.51d61b88.js.map",
     "787.4b24f717.chunk.js.map": "/home/static/js/787.4b24f717.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fe927caf.css",
-    "static/js/main.24bdbdba.js"
+    "static/js/main.51d61b88.js"
   ]
 }

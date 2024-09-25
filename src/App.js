@@ -59,10 +59,10 @@ const Home = React.forwardRef((props, ref) => {
       )}
       {repos2.show && (
         <Publications
-          // heading={repos2.heading}
-          // username={repos2.gitHubUsername}
-          // length={repos2.reposLength}
-          // specfic={repos2.specificRepos}
+          heading={repos2.heading}
+          username={repos2.gitHubUsername}
+          length={repos2.reposLength}
+          specfic={repos2.specificRepos}
         />
       )}
       {leadership.show && (

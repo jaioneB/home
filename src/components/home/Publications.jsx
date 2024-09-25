@@ -5,7 +5,7 @@ import Row from "react-bootstrap/Row";
 import ProjectCard from "./ProjectCard";
 
 
-const Publications = () => {
+const Publications = ({ heading, username, length, specfic }) => {
   const publications = [
     { title: "Research Paper 1"},
     { title: "Article 2", link: "#" },

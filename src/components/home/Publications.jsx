@@ -2,7 +2,7 @@ import React from 'react';
 
 const Publications = () => {
   const publications = [
-    { title: "Research Paper 1", link: "#" },
+    { title: "Research Paper 1"},
     { title: "Article 2", link: "#" },
     { title: "Conference Paper 3", link: "#" },
   ];

@@ -10,20 +10,9 @@ const Publications = ({ heading, username, length, specfic }) => {
   ];
 
   return (
-    <Jumbotron id="aboutme" className="m-0">
+    <Jumbotron id="publications" className="m-0">
     <div className="container row">
-      <div className="col-5 d-none d-lg-block align-self-center">
-        {showPic && (
-          <img
-            className="border border-secondary rounded-circle"
-            src={profilePicUrl}
-            alt="profilepicture"
-            width={imgSize}
-            height={imgSize}
-          />
-        )}
-      </div>
-      <div className={`col-lg-${showPic ? "7" : "12"}`}>
+      <div className="col-lg-12"> {/* Full width column */}
         <h2 className="display-4 mb-5 text-center">{heading}</h2>
         <p className="lead text-center">{message}</p>
         {resume && (

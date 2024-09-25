@@ -67,7 +67,7 @@ const repos2 = {
   show: true,
   heading: "Publications",
   message: "sometthing",
-  resume: resume,
+  resume: "resume",
 };
 
 

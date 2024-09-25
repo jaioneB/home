@@ -66,9 +66,8 @@ const repos = {
 const repos2 = {
   show: true,
   heading: "Publications",
-  gitHubUsername: "hashirshoaeb", //i.e."johnDoe12Gh"
-  reposLength: 4,
-  specificRepos: [],
+  message: "sometthing",
+  resume: resume,
 };
 
 

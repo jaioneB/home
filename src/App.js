@@ -17,6 +17,7 @@ import Project from "./components/home/Project";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Skills from "./components/home/Skills";
+import Publications from "./components/home/Publications.jsx";
 // import { Blog } from "./components/blog/Blog";
 // import BlogPost from "./components/blog/BlogPost";
 import GetInTouch from "./components/home/GetInTouch.jsx";
@@ -57,11 +58,11 @@ const Home = React.forwardRef((props, ref) => {
         />
       )}
       {repos2.show && (
-        <Project
-          heading={repos2.heading}
-          username={repos2.gitHubUsername}
-          length={repos2.reposLength}
-          specfic={repos2.specificRepos}
+        <Publications
+          // heading={repos2.heading}
+          // username={repos2.gitHubUsername}
+          // length={repos2.reposLength}
+          // specfic={repos2.specificRepos}
         />
       )}
       {leadership.show && (

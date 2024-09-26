@@ -6,7 +6,7 @@ const Footer = (props) => {
 
   return (
     <footer style={bgStyle} className="mt-auto py-5 text-center ">
-      <Container>
+      {/* <Container>
         {props.children}
         <i className="fas fa-code" /> with <i className="fas fa-heart" /> by{" "}
         <a
@@ -22,7 +22,7 @@ const Footer = (props) => {
           <small className="text-muted">
           </small>
         </p>
-      </Container>
+      </Container> */}
     </footer>
   );
 };

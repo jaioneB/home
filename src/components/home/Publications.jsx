@@ -27,19 +27,23 @@ const Publications = ({ heading, message, resume }) => {
                 style={{
                   listStyleType: item.title ? "disc" : "none",
                   marginLeft: item.title ? "20px" : "0",
-                  marginTop: item.subtitle ? "30px" : "0", // Add space before subtitles
+                  marginTop: item.subtitle ? "30px" : "0",
                 }}
               >
                 {item.title ? (
-                  item.link ? (
-                    <a href={item.link} className="publication-link">
-                      {item.title}
-                    </a>
-                  ) : (
+                  <>
                     <span>{item.title}</span>
-                  )
+                    {item.link && (
+                      <>
+                        {" "}
+                        (<a href={item.link} className="publication-link">
+                          Link
+                        </a>)
+                      </>
+                    )}
+                  </>
                 ) : (
-                  <h4 style={{ fontWeight: "bold" }}>{item.subtitle}</h4> // Render subtitle as bold
+                  <h4 style={{ fontWeight: "bold" }}>{item.subtitle}</h4>
                 )}
               </li>
             ))}

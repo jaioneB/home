@@ -20,7 +20,15 @@ const Publications = ({ heading, message, resume }) => {
 
           <ul className="lead list-unstyled">
             {publications.map((item, index) => (
-              <li key={index} className="text-left" style={{ listStyleType: item.title ? "disc" : "none", marginLeft: item.title ? "20px" : "0" }}>
+              <li
+                key={index}
+                className="text-left"
+                style={{
+                  listStyleType: item.title ? "disc" : "none",
+                  marginLeft: item.title ? "20px" : "0",
+                  marginTop: item.subtitle ? "30px" : "0", // Add space before subtitles
+                }}
+              >
                 {item.title ? (
                   item.link ? (
                     <a href={item.link} className="publication-link">
@@ -30,7 +38,7 @@ const Publications = ({ heading, message, resume }) => {
                     <span>{item.title}</span>
                   )
                 ) : (
-                  <h4>{item.subtitle}</h4> // Render subtitle as h4
+                  <h4 style={{ fontWeight: "bold" }}>{item.subtitle}</h4> // Render subtitle as bold
                 )}
               </li>
             ))}

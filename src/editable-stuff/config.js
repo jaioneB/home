@@ -63,10 +63,10 @@ const repos = {
   specificRepos: [],
 };
 
-const repos2 = {
+const publications = {
   show: true,
   heading: "Publications",
-  message: "sometthing",
+  message: ["sometthing, something elese"],
   resume: "resume",
 };
 
@@ -150,4 +150,4 @@ const experiences = {
 
 
 
-export { navBar, mainBody, about, repos, repos2, skills, leadership, getInTouch, experiences };
+export { navBar, mainBody, about, repos, publications, skills, leadership, getInTouch, experiences };

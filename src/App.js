@@ -9,7 +9,8 @@ import {
   leadership,
   skills,
   getInTouch,
-  experiences
+  experiences,
+  publications
 } from "./editable-stuff/config.js";
 import MainBody from "./components/home/MainBody";
 import AboutMe from "./components/home/AboutMe";
@@ -57,11 +58,11 @@ const Home = React.forwardRef((props, ref) => {
           specfic={repos.specificRepos}
         />
       )}
-      {repos2.show && (
+      {publications.show && (
         <Publications
-          heading={repos2.heading}
-          message={repos2.message}
-          resume={repos2.reposLength}
+          heading={publications.heading}
+          message={publications.message}
+          resume={publications.reposLength}
         />
       )}
       {leadership.show && (

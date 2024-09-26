@@ -127,7 +127,7 @@ const getInTouch = {
   show: true,
   heading: "Get In Touch",
   message:
-    "I'm currently doing a PhD in NLP regarding language variation in Basque",
+    "I'm currently doing a PhD in NLP regarding language variation in Basque, do not hesitate to contact me!",
   email: "jaione.bengoetxea@ehu.eus",
 };
 

@@ -37,7 +37,7 @@ const Publications = ({ heading, message, resume }) => {
                       dangerouslySetInnerHTML={{
                         __html: item.title.replace(
                           new RegExp(name, "g"),
-                          `<strong style="font-size: 1.2em; font-weight: 900;">${name}</strong>`
+                          `<strong style="font-weight: bold;">${name}</strong>`
                         ),
                       }}
                     />

@@ -2,6 +2,7 @@ import React from 'react';
 import { Jumbotron } from "./migration";
 
 const Publications = ({ heading, message, resume }) => {
+  const name = "Jaione Bengoetxea"; // Replace with your actual name
   const publications = [
     { subtitle: "Publications" },
     { title: "Jaione Bengoetxea, Yi-Ling Chung, Marco Guerini, and Rodrigo Agerri. 2024. Basque and Spanish Counter Narrative Generation: Data Creation and Evaluation. In Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024), pages 2132–2141, Torino, Italia. ELRA and ICCL.", link: "https://aclanthology.org/2024.lrec-main.192/" },
@@ -32,7 +33,14 @@ const Publications = ({ heading, message, resume }) => {
               >
                 {item.title ? (
                   <>
-                    <span>{item.title}</span>
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: item.title.replace(
+                          new RegExp(name, "g"),
+                          `<strong>${name}</strong>`
+                        ),
+                      }}
+                    />
                     {item.link && (
                       <>
                         {" "}

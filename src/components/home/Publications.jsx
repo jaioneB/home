@@ -7,25 +7,30 @@ const Publications = ({ heading, message, resume }) => {
     { subtitle: "Subsection 1" },
     { title: "Article 2", link: "#" },
     { title: "Conference Paper 3", link: "#" },
+    { subtitle: "Subsection 2" },
+    { title: "Journal Paper 4", link: "#" },
   ];
 
   return (
     <Jumbotron id="publications" className="m-0">
       <div className="container row">
-        <div className="col-lg-12"> {/* Full width column */}
+        <div className="col-lg-12">
           <h2 className="display-4 mb-5 text-center">{heading}</h2>
           <p className="lead text-center">{message}</p>
 
-          {/* Left-align and add bullet points */}
           <ul className="lead list-unstyled">
-            {publications.map((pub, index) => (
-              <li key={index} className="text-left" style={{ listStyleType: "disc", marginLeft: "20px" }}>
-                {pub.link ? (
-                  <a href={pub.link} className="publication-link">
-                    {pub.title}
-                  </a>
+            {publications.map((item, index) => (
+              <li key={index} className="text-left" style={{ listStyleType: item.title ? "disc" : "none", marginLeft: item.title ? "20px" : "0" }}>
+                {item.title ? (
+                  item.link ? (
+                    <a href={item.link} className="publication-link">
+                      {item.title}
+                    </a>
+                  ) : (
+                    <span>{item.title}</span>
+                  )
                 ) : (
-                  <span>{pub.title}</span>
+                  <h4>{item.subtitle}</h4> // Render subtitle as h4
                 )}
               </li>
             ))}

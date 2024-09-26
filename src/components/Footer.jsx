@@ -6,9 +6,9 @@ const Footer = (props) => {
 
   return (
     <footer style={bgStyle} className="mt-auto py-5 text-center ">
-      {/* <Container>
+      <Container>
         {props.children}
-        <i className="fas fa-code" /> with <i className="fas fa-heart" /> by{" "}
+        {/* <i className="fas fa-code" /> with <i className="fas fa-heart" /> by{" "}
         <a
           rel="noopener"
           href="https://github.com/jaioneB"
@@ -17,12 +17,12 @@ const Footer = (props) => {
             Hashir Shoaib
           </span>
         </a>{" "}
-        using <i className="fab fa-react" />
+        using <i className="fab fa-react" /> */}
         <p>
           <small className="text-muted">
           </small>
         </p>
-      </Container> */}
+      </Container>
     </footer>
   );
 };

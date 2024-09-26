@@ -6,7 +6,7 @@ const Publications = ({ heading, message, resume }) => {
   const publications = [
     { subtitle: "Publications" },
     { title: "Jaione Bengoetxea, Yi-Ling Chung, Marco Guerini, and Rodrigo Agerri. 2024. Basque and Spanish Counter Narrative Generation: Data Creation and Evaluation. In Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024), pages 2132–2141, Torino, Italia. ELRA and ICCL.", link: "https://aclanthology.org/2024.lrec-main.192/" },
-    { title: "Agerri, Rodrigo, Jeremy Barnes, Jaione Bengoetxea, Blanca Calvo Figueras, Joseba Fernandez de Landa, Iker García-Ferrero, Olia Toporkov, and Irune Zubiaga. 2024. HiTZ@ Disargue: Few-shot Learning and Argumentation to Detect and Fight Misinformation in Social Media.", link: "https://ceur-ws.org/Vol-3729/p28_rev.pdf" },
+    { title: "Rodrigo Agerri, Jeremy Barnes, Jaione Bengoetxea, Blanca Calvo Figueras, Joseba Fernandez de Landa, Iker García-Ferrero, Olia Toporkov, and Irune Zubiaga. 2024. HiTZ@ Disargue: Few-shot Learning and Argumentation to Detect and Fight Misinformation in Social Media.", link: "https://ceur-ws.org/Vol-3729/p28_rev.pdf" },
     
     { subtitle: "Theses" },
     { title: "Conference Paper 3", link: "#" },

@@ -5,7 +5,7 @@ const Publications = ({ heading, message, resume }) => {
   const name = "Jaione Bengoetxea"; // Replace with your actual name
   const publications = [
     { subtitle: "Publications" },
-    { title: "Basque and Spanish Counter Narrative Generation: Data Creation and Evaluation. Jaione Bengoetxea, Yi-Ling Chung, Marco Guerini, and Rodrigo Agerri (2024). In Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024), pages 2132–2141, Torino, Italia. ELRA and ICCL.", link: "https://aclanthology.org/2024.lrec-main.192/" },
+    { title: "Basque and Spanish Counter Narrative Generation: Data Creation and Evaluation.", authors: "Jaione Bengoetxea, Yi-Ling Chung, Marco Guerini, and Rodrigo Agerri (2024). In Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024), pages 2132–2141, Torino, Italia. ELRA and ICCL.", link: "https://aclanthology.org/2024.lrec-main.192/" },
     { title: "HiTZ@ Disargue: Few-shot Learning and Argumentation to Detect and Fight Misinformation in Social Media. Rodrigo Agerri, Jeremy Barnes, Jaione Bengoetxea, Blanca Calvo Figueras, Joseba Fernandez de Landa, Iker García-Ferrero, Olia Toporkov, and Irune Zubiaga (2024). In Proceedings of the Seminar of the Spanish Society for Natural Language Processing: Projects and System Demonstrations (SEPLN-CEDI-PD 2024), pages 118-123, A coruña, Spain", link: "https://ceur-ws.org/Vol-3729/p28_rev.pdf" },
     
     { subtitle: "Theses" },
@@ -33,22 +33,28 @@ const Publications = ({ heading, message, resume }) => {
               >
                 {item.title ? (
                   <>
-                    <span
+                    {/* Title on the first line */}
+                    <div>
+                      <strong>{item.title}</strong>
+                      {item.link && (
+                        <>
+                          {" "}
+                          (<a href={item.link} className="publication-link">
+                            Link
+                          </a>)
+                        </>
+                      )}
+                    </div>
+
+                    {/* Authors and other info on the second line */}
+                    <div
                       dangerouslySetInnerHTML={{
-                        __html: item.title.replace(
+                        __html: item.authors.replace(
                           new RegExp(name, "g"),
-                          `<strong style="font-weight: bold;">${name}</strong>`
+                          `<strong>${name}</strong>`
                         ),
                       }}
                     />
-                    {item.link && (
-                      <>
-                        {" "}
-                        (<a href={item.link} className="publication-link">
-                          Link
-                        </a>)
-                      </>
-                    )}
                   </>
                 ) : (
                   <h4 style={{ fontWeight: "bold" }}>{item.subtitle}</h4>

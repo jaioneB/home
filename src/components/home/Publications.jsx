@@ -4,6 +4,7 @@ import { Jumbotron } from "./migration";
 const Publications = ({ heading, message, resume }) => {
   const publications = [
     { title: "Research Paper 1", link: "#" },
+    { subtitle: "Subsection 1" },
     { title: "Article 2", link: "#" },
     { title: "Conference Paper 3", link: "#" },
   ];

@@ -7,10 +7,11 @@ const Publications = ({ heading, message, resume }) => {
     { subtitle: "Publications" },
     { title: "Basque and Spanish Counter Narrative Generation: Data Creation and Evaluation. Jaione Bengoetxea, Yi-Ling Chung, Marco Guerini, and Rodrigo Agerri (2024). In Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024), pages 2132–2141, Torino, Italia. ELRA and ICCL.", link: "https://aclanthology.org/2024.lrec-main.192/" },
     { title: "HiTZ@ Disargue: Few-shot Learning and Argumentation to Detect and Fight Misinformation in Social Media. Rodrigo Agerri, Jeremy Barnes, Jaione Bengoetxea, Blanca Calvo Figueras, Joseba Fernandez de Landa, Iker García-Ferrero, Olia Toporkov, and Irune Zubiaga (2024). In Proceedings of the Seminar of the Spanish Society for Natural Language Processing: Projects and System Demonstrations (SEPLN-CEDI-PD 2024), pages 118-123, A coruña, Spain", link: "https://ceur-ws.org/Vol-3729/p28_rev.pdf" },
-    
+    { title: "EuSQuAD: Automatically Translated and Aligned SQuAD2.0 for Basque. García-Pablos, Aitor, Naiara Perez, Montse Cuadros and Jaione Bengoetxea (2024). Procesamiento del Lenguaje Natural [online], 73: 125-137.", link: "http://journal.sepln.org/sepln/ojs/ojs/index.php/pln/article/view/6605" },
+
     { subtitle: "Theses" },
-    { title: "Conference Paper 3", link: "#" },
-    { title: "Journal Paper 4", link: "#" },
+    { title: "tfm", link: "#" },
+    { title: "tfg", link: "#" },
   ];
 
   return (

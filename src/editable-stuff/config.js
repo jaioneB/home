@@ -66,7 +66,7 @@ const repos = {
 const publications = {
   show: true,
   heading: "Publications",
-  message: ["sometthing", "something else"],
+  message: [],
   resume: "resume",
 };
 

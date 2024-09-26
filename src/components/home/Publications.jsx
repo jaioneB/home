@@ -10,8 +10,8 @@ const Publications = ({ heading, message, resume }) => {
     { title: "EuSQuAD: Automatically Translated and Aligned SQuAD2.0 for Basque. García-Pablos, Aitor, Naiara Perez, Montse Cuadros and Jaione Bengoetxea (2024). Procesamiento del Lenguaje Natural [online], 73: 125-137.", link: "http://journal.sepln.org/sepln/ojs/ojs/index.php/pln/article/view/6605" },
 
     { subtitle: "Theses" },
-    { title: "tfm", link: "#" },
-    { title: "tfg", link: "#" },
+    { title: "Basque and Spanish Counter Narrative Generation: Data Creation and Evaluation. Jaione Bengoetxea (2022). Master's Thesis, supervised by Rodrigo Agerri", link: "https://addi.ehu.es/handle/10810/61814" },
+    { title: "LREs: Task modality effects and L1 use as a mediational tool. Jaione Bengoetxea (2020). Bachelor's thesis, supervised by Maria Martinez Adrian", link: "#" },
   ];
 
   return (
